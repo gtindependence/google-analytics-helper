@@ -1,4 +1,4 @@
-[![NPM version](https://img.shields.io/npm/v/@teamhive/google-analytics-helper.svg)](https://npmjs.org/package/@teamhive/google-analytics-helper) [![NPM downloads](https://img.shields.io/npm/dm/@teamhive/google-analytics-helper.svg)](https://npmjs.org/package/@teamhive/google-analytics-helper)
+[![NPM version](https://img.shields.io/npm/v/@gtindependence/google-analytics-helper.svg)](https://npmjs.org/package/@gtindependence/google-analytics-helper) [![NPM downloads](https://img.shields.io/npm/dm/@gtindependence/google-analytics-helper.svg)](https://npmjs.org/package/@gtindependence/google-analytics-helper)
 
 # Google Analytics Helper
 
@@ -6,13 +6,13 @@ This Google Analytics Helper is an easy way to add Google Analytics with offline
 
 ### Installation
 ```
-npm install @teamhive/google-analytics-helper
+npm install @gtindependence/google-analytics-helper
 ```
 
 ### Usage
 Somewhere in the app bootstrap process:
 ```typescript
-import { initalizeGoogleAnalytics } from '@teamhive/google-analytics-helper';
+import { initalizeGoogleAnalytics } from '@gtindependence/google-analytics-helper';
 
 initalizeGoogleAnalytics('UA-XXXXX-Y');
 ```

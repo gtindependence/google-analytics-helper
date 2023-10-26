@@ -41,7 +41,7 @@ export async function initializeGoogleAnalytics(
     if (getHits().length > 0) {
         try {
             await checkEndpoint();
-            sendBatchHits();
+            void sendBatchHits();
         } catch {}
     }
 
@@ -50,7 +50,7 @@ export async function initializeGoogleAnalytics(
         if (getHits().length > 0) {
             try {
                 await checkEndpoint();
-                sendBatchHits();
+                void sendBatchHits();
             } catch {}
         }
     });
@@ -105,7 +105,7 @@ async function offlineTracker(model: any) {
         img.src = `https://www.google-analytics.com/collect?${payload}`;
 
         // Send stored batch hits
-        sendBatchHits();
+        void sendBatchHits();
     } catch {
         // The endpoint request failed, store this hit for later
         storeHit({
